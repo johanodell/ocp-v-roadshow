@@ -63,7 +63,7 @@ spec:
             name: cloudinitdisk
           interfaces:
           - bridge: {}
-            name: vlan251
+            name: vlan251-bridge
           networkInterfaceMultiqueue: true
           rng: {}
         machine:
