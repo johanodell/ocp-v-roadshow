@@ -28,13 +28,11 @@ spec:
       pvc:
         accessModes:
         - ReadWriteOnce
+        volumeMode: Block
         resources:
           requests:
             storage: 32Gi
         storageClassName: lvms-nvme-vg-immediate
-        accessModes:
-          - ReadWriteOnce
-        volumeMode: Block
       sourceRef:
         kind: DataSource
         name: fedora  
