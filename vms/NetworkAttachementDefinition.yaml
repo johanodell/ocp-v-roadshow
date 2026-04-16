@@ -8,6 +8,6 @@ metadata:
   name: vlan251-bridge 
   namespace: dell-heroes 
 spec:
-  config: '{"name":"labnet","type":"bridge","cniVersion":"0.3.1","bridge":"br1","macspoofchk":true,"ipam":{},"preserveDefaultVlan":false}'
+  config: '{"name":"labnet","type":"bridge","cniVersion":"0.3.1","bridge":"br-vlan251","macspoofchk":true,"ipam":{},"preserveDefaultVlan":false}'
 
 
