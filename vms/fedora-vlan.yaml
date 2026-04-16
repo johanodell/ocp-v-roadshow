@@ -73,9 +73,9 @@ spec:
             memory: 2Gi
       evictionStrategy: LiveMigrate
       networks:
-      - multus:
+      - name: vlan251
+        multus:
           networkName: dell-heroes/vlan251-bridge
-        name: vlan251
       terminationGracePeriodSeconds: 180
       volumes:
       - dataVolume:
