@@ -5,7 +5,7 @@ metadata:
     k8s.v1.cni.cncf.io/resourceName: bridge.network.kubevirt.io/br1
     labels:
       app.kubernetes.io/instance: vms
-  name: vlan251 
+  name: vlan251-bridge 
   namespace: dell-heroes 
 spec:
   config: '{"name":"labnet","type":"bridge","cniVersion":"0.3.1","bridge":"br1","macspoofchk":true,"ipam":{},"preserveDefaultVlan":false}'
