@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: dell-heroes-gitops
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: dell-heroes
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: vms
+    repoURL: https://github.com/johanodell/dell-heroes-demo.git
+    targetRevision: HEAD
+  syncPolicy:
+    automated: {}
+    syncOptions:
+    - CreateNamespace=true

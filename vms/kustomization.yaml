@@ -1,0 +1,3 @@
+resources:
+- fedora-vlan.yaml
+- NetworkAttachementDefinition.yaml
