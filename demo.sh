@@ -73,7 +73,8 @@ wait
 pei "oc get vm"
 echo -e "\n"
 wait
-cowsay "great, lets have a look in the interface"
+cowsay "Yay, lets have a look in the GUI"
+wait
 clear
 figlet -f starwars -S "end of demo"| lolcat -a -s 100
 wait
