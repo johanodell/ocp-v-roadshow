@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: dell-heroes-gitops
+  name: OpenShift-Virt-roadshow
   namespace: openshift-gitops
 spec:
   destination:
