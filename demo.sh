@@ -58,6 +58,9 @@ echo -e "\n"
 viu images/ocp-v-gitops.png
 wait
 echo -e "\n"
+pei "oc get vms -n dell-heroes"
+wait
+echo -e "\n"
 pei "tree vms"
 echo -e "\n"
 wait
@@ -70,10 +73,10 @@ wait
 pei "oc apply -f vms/application.yaml"
 echo -e "\n"
 wait
-pei "oc get vm"
+pei "oc get vm -n dell-heroes"
 echo -e "\n"
 wait
-cowsay "Yay, lets have a look in the GUI"
+cowsay "Yay, it's there"
 wait
 clear
 figlet -f starwars -S "end of demo"| lolcat -a -s 100
