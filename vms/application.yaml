@@ -5,12 +5,12 @@ metadata:
   namespace: openshift-gitops
 spec:
   destination:
-    namespace: dell-heroes
+    namespace: 00-ocp-v-roadshow
     server: https://kubernetes.default.svc
   project: default
   source:
     path: vms
-    repoURL: https://github.com/johanodell/dell-heroes-demo.git
+    repoURL: https://github.com/johanodell/ocp-v-roadshow.git
     targetRevision: HEAD
   syncPolicy:
     automated: {}
